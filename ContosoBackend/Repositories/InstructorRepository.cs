@@ -186,5 +186,11 @@ namespace ConUniv.Repositories
         {
             this.dataSource.Dispose();
         }
+
+
+        public IEnumerable<Needletail.DataAccess.Entities.DynamicEntity> ExecuteStoredProcedureReturnDynaimcRows(string name, object parameters)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

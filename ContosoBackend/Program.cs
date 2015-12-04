@@ -13,10 +13,13 @@ namespace ContosoBackend
         {
             //Initialize the backend, this setup the connection with DiPS and registers all the controllers with the public methods
             InitializeBackEnd();
+
         }
 
         static void Main(string[] args)
         {
+            //Migrations to recreate the database if needed
+            Needletail.DataAccess.Migrations.Migrator.Migrate("Default");
 
             //wait for a key
             while (true)
