@@ -3,7 +3,7 @@
 
 <a href="http://pedro-ramirez-suarez.github.io/DiPS/" target="_blank">DiPS</a> is a Distributed Publish Subscribe service, built with C# and clients for C#, Ruby and Javascript.
 
-The application is a demonstration of how to build a web application that has a console application as backend and communicates with it through DiPS.
+The application is a demonstration of how to build a web application that has a console application as backend and communicates with it through DiPS, the web appliction in built only with html, css and javascript.
 
 ## Running the application.
 The first time you run the application the database structure will be created, you need to create the database and modify the console application  app.config file accordingly.
