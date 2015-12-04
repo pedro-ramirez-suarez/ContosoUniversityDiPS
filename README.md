@@ -1,7 +1,7 @@
 # Contoso University with DiPS
 ## A web application with a C# backend build with DiPS.
 
-DiPS is a Distributed Publish Subscribe service, built with C# and clients for C#, Ruby and Javascript.
+<a href="http://pedro-ramirez-suarez.github.io/DiPS/" target="_blank">DiPS</a> is a Distributed Publish Subscribe service, built with C# and clients for C#, Ruby and Javascript.
 
 The application is a demonstration of how to build a web application that has a console application as backend and communicates with it through DiPS.
 
