@@ -32,6 +32,7 @@
 
             //first we need to subscribe
             diPSClient.Subscribe('DepartmentsUpdated', function (data) {
+                appViewModel.Departments.removeAll();
                 _.each(data.Departments, function (item) {
                     appViewModel.add(item);
                 });

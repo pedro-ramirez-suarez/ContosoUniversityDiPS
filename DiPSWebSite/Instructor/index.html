@@ -31,6 +31,7 @@
 
             //first we need to subscribe
             diPSClient.Subscribe('InstructorsUpdated', function (data) {
+                appViewModel.Instructors.removeAll();
                 _.each(data.Instructors, function (item) {
                     appViewModel.add(item);
                 });
