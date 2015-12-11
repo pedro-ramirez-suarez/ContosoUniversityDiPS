@@ -1,4 +1,4 @@
-﻿require(["/Scripts/app/Department.controller.js", "/Scripts/app/Department.binding.js", 'utils'], function (departmentController, appViewModel, utils) {
+﻿require(["/Scripts/app/Department.binding.js", 'utils'], function (appViewModel, utils) {
     var id = getParameterByName('id');
     //first we need to subscribe
     diPSClient.Subscribe('DepartmentReturned' + id, function (data) {

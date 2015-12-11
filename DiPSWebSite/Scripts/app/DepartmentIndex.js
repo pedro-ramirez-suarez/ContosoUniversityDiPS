@@ -1,4 +1,4 @@
-﻿require(["/Scripts/app/Department.controller.js", "/Scripts/app/Department.binding.js", 'moment', 'utils', 'underscore'], function (departmentController, appViewModel, moment, utils, _) {
+﻿require(["/Scripts/app/Department.binding.js", 'moment', 'utils', 'underscore'], function (appViewModel, moment, utils, _) {
 
     //first we need to subscribe
     diPSClient.Subscribe('DepartmentsUpdated', function (data) {

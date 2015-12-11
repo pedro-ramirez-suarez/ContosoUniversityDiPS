@@ -1,4 +1,4 @@
-﻿require(["/Scripts/app/Course.controller.js", "/Scripts/app/Course.binding.js", "/Scripts/app/Course.validate.js", 'utils', 'typeahead'], function (courseController, appViewModel, formValidator, utils, type) {
+﻿require(["/Scripts/app/Course.binding.js", "/Scripts/app/Course.validate.js", 'utils', 'typeahead'], function (appViewModel, formValidator, utils, type) {
     var id = getParameterByName('id');
     //first we need to subscribe
     diPSClient.Subscribe('CourseReturned' + id, function (data) {

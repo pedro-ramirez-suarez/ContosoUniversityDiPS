@@ -1,4 +1,4 @@
-﻿require(["/Scripts/app/Instructor.controller.js", "/Scripts/app/Instructor.binding.js", 'moment', 'utils', 'underscore'], function (instructorController, appViewModel, moment, utils, _) {
+﻿require(["/Scripts/app/Instructor.binding.js", 'moment', 'utils', 'underscore'], function (appViewModel, moment, utils, _) {
     //first we need to subscribe
     diPSClient.Subscribe('InstructorsUpdated', function (data) {
         appViewModel.Instructors.removeAll();

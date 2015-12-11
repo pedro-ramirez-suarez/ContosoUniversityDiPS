@@ -1,4 +1,4 @@
-﻿require(["/Scripts/app/Department.controller.js", "/Scripts/app/Department.binding.js", "/Scripts/app/Department.validate.js", 'utils', 'typeahead'], function (departmentController, appViewModel, formValidator, utils, type) {
+﻿require(["/Scripts/app/Department.binding.js", "/Scripts/app/Department.validate.js", 'utils', 'typeahead'], function (appViewModel, formValidator, utils, type) {
     var drew = false;
     var lastResult = [];
     var id = getParameterByName('id');

@@ -1,4 +1,4 @@
-﻿require(["/Scripts/app/Instructor.controller.js", "/Scripts/app/Instructor.binding.js", "/Scripts/app/Instructor.validate.js", 'utils', 'typeahead'], function (instructorController, appViewModel, formValidator, utils, type) {
+﻿require(["/Scripts/app/Instructor.binding.js", "/Scripts/app/Instructor.validate.js", 'utils', 'typeahead'], function (appViewModel, formValidator, utils, type) {
     var drew = false;
     var lastResult = [];
     var id = getParameterByName('id');

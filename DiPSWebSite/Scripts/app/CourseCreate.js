@@ -1,4 +1,4 @@
-﻿require(["/Scripts/app/Course.controller.js", "/Scripts/app/Course.binding.js", "/Scripts/app/Course.validate.js", 'utils', 'typeahead'], function (courseController, appViewModel, formValidator, utils, type) {
+﻿require(["/Scripts/app/Course.binding.js", "/Scripts/app/Course.validate.js", 'utils', 'typeahead'], function (appViewModel, formValidator, utils, type) {
     //first we need to subscribe
     diPSClient.Subscribe('CourseReturned' + '00000000-0000-0000-0000-000000000000', function (data) {
         var model = data.course;

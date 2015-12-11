@@ -1,4 +1,4 @@
-﻿require(["/Scripts/app/Student.controller.js", "/Scripts/app/Student.binding.js", "/Scripts/app/Student.validate.js", 'utils', 'typeahead'], function (StudentController, appViewModel, formValidator, utils, type) {
+﻿require(["/Scripts/app/Student.binding.js", "/Scripts/app/Student.validate.js", 'utils', 'typeahead'], function (appViewModel, formValidator, utils, type) {
     var drew = false;
     var lastResult = [];
     var id = '00000000-0000-0000-0000-000000000000';
