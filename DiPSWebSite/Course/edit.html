@@ -28,18 +28,9 @@
     </script>
 
     <script>
-        require(["/Scripts/app/Course.controller.js", "/Scripts/app/Course.binding.js", "/Scripts/app/Course.validate.js", 'utils', 'typeahead'], function (courseController, appViewModel, formValidator, utils, type) {
-            var id = getParameterByName('id');
-            //first we need to subscribe
-            diPSClient.Subscribe('CourseReturned' + id, function (data) {
-                var model = data.course;
-                appViewModel.add(model);
-                formValidator.initViewModel(appViewModel);
-                formValidator.initValidator();
-            });
-        //then we need to publish
-        diPSClient.Publish('Courses.GetCourse', { Id: id });
-    });
+        require(["/Scripts/app/CourseEdit.js"], function () {
+
+        });
     </script>
 
 
@@ -91,7 +82,7 @@
             <div class="page-header text-center">
                 <h2>Edit</h2>
             </div>
-            <form id="edit_course_form" method="post" class="form-horizontal course_form"  role="form" data-bind="foreach: Courses">
+            <form id="edit_course_form" method="post" class="form-horizontal course_form" role="form" data-bind="foreach: Courses">
 
                 <div class='form-group'>
                     <div class='col-sm-4'>
@@ -133,7 +124,7 @@
                     </div>
                 </div>
             </form>
-            
+
         </div>
 
 
