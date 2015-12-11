@@ -1,5 +1,4 @@
-﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -31,26 +30,16 @@
             //do nothing
         });
     </script>
-
 </head>
 <body cz-shortcut-listen="true">
-
-
-
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-
         <div class="navbar-header">
             <div class="container">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-
                     <span class="sr-only">Toggle navigation</span>
-
                     <span class="icon-bar"></span>
-
                     <span class="icon-bar"></span>
-
                     <span class="icon-bar"></span>
-
                 </button>
                 <a class="navbar-brand" href="/" style="margin-top:-23px"><img src="/Content/DiPSLogo.png" style="border:none;" /></a>
                 <div class="collapse navbar-collapse">
@@ -61,47 +50,35 @@
                         <li><a href="/Course/index.html">Courses</a></li>
                         <!--toplinks-->
                     </ul>
-
                 </div>
-
                 <!--/.nav-collapse -->
             </div>
         </div>
     </div>
-
     <div id="spinjs" class="spinjs"></div>
-
     <div class="container">
-
-
         <div id="department_template">
-
-
             <div class="page-header text-center">
                 <h2>Edit</h2>
             </div>
             <form id="edit_department_form" method="post" class="form-horizontal department_form" action="Edit" role="form" data-bind="foreach: Departments">
-
                 <div class='form-group'>
                     <div class='col-sm-4'>
                         <input type='text' name='Id' data-bind='value: Department.Id' hidden />
                     </div>
                 </div>
-
                 <div class='form-group'>
                     <label class='col-sm-2 control-label'>Name</label>
                     <div class='col-sm-4'>
                         <input type='text' class='form-control' name='Name' data-bind='value: Department.Name' />
                     </div>
                 </div>
-
                 <div class='form-group'>
                     <label class='col-sm-2 control-label'>Budget</label>
                     <div class='col-sm-4'>
                         <input type='text' class='form-control' name='Budget' data-bind='value: Department.Budget' />
                     </div>
                 </div>
-
                 <div class='form-group'>
                     <label class='col-sm-2 control-label'>StartDate</label>
                     <div class='col-sm-4'>
@@ -121,9 +98,6 @@
                                searchfield='FirstName' idfield='Id' showfield='FirstName' order='FirstName' referencedtable='Instructor' />
                     </div>
                 </div>
-
-
-
                 <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">
                         <!-- Do NOT use name="submit" or id="submit" for the Submit button -->
@@ -132,17 +106,7 @@
                     </div>
                 </div>
             </form>
-
-            
         </div>
-
-
-
-
-
     </div>
-
-
-
 </body>
 </html>

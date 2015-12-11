@@ -1,5 +1,4 @@
-﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -28,29 +27,19 @@
     </script>
     <script>
         require(["/Scripts/app/StudentEdit.js"], function () {
-            //do nothing   
+            //do nothing
         });
     </script>
-
 </head>
 <body cz-shortcut-listen="true">
-
-
-
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-
         <div class="navbar-header">
             <div class="container">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-
                     <span class="sr-only">Toggle navigation</span>
-
                     <span class="icon-bar"></span>
-
                     <span class="icon-bar"></span>
-
                     <span class="icon-bar"></span>
-
                 </button>
                 <a class="navbar-brand" href="/" style="margin-top:-23px"><img src="/Content/DiPSLogo.png" style="border:none;" /></a>
                 <div class="collapse navbar-collapse">
@@ -61,45 +50,35 @@
                         <li><a href="/Course/index.html">Courses</a></li>
                         <!--toplinks-->
                     </ul>
-
                 </div>
-
                 <!--/.nav-collapse -->
             </div>
         </div>
     </div>
-
     <div id="spinjs" class="spinjs"></div>
-
     <div class="container">
-
         <div id="Student_template">
-            
             <div class="page-header text-center">
                 <h2>Edit</h2>
             </div>
             <form id="edit_Student_form" method="post" class="form-horizontal student_form" role="form" data-bind="foreach: Students">
-
                 <div class='form-group'>
                     <div class='col-sm-4'>
                         <input type='text' name='Id' data-bind='value: Student.Id' hidden />
                     </div>
                 </div>
-
                 <div class='form-group'>
                     <label class='col-sm-2 control-label'>LastName</label>
                     <div class='col-sm-4'>
                         <input type='text' class='form-control' name='LastName' data-bind='value: Student.LastName' />
                     </div>
                 </div>
-
                 <div class='form-group'>
                     <label class='col-sm-2 control-label'>FirstName</label>
                     <div class='col-sm-4'>
                         <input type='text' class='form-control' name='FirstName' data-bind='value: Student.FirstName' />
                     </div>
                 </div>
-
                 <div class='form-group'>
                     <label class='col-sm-2 control-label'>EnrollmentDate</label>
                     <div class='col-sm-4'>
@@ -111,7 +90,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class='form-group'>
                     <label class='col-sm-2 control-label'></label>
                     <div class='col-sm-4'>
@@ -126,15 +104,12 @@
                         </div>
                     </div>
                 </div>
-
-
                 <div class='form-group'>
                     <label class='col-sm-2 control-label'>Course(s)</label>
                     <div class='col-sm-4'>
                         <table class="table table-striped">
                             <thead>
                                 <tr>
-
                                     <th>
                                         Name
                                     </th>
@@ -145,7 +120,6 @@
                             </thead>
                             <tbody data-bind="foreach: Courses">
                                 <tr>
-
                                     <td>
                                         <label class='display-label' data-bind='text: Title'></label>
                                     </td>
@@ -160,7 +134,6 @@
                         </table>
                     </div>
                 </div>
-
                 <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">
                         <!-- Do NOT use name="submit" or id="submit" for the Submit button -->
@@ -169,18 +142,8 @@
                     </div>
                 </div>
             </form>
-
-           
         </div>
-
-
-
-
-
     </div>
-
-
-
 </body>
 </html>
 

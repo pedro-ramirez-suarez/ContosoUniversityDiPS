@@ -1,5 +1,4 @@
-﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -31,27 +30,16 @@
             //do nothing
         });
     </script>
-
-
 </head>
 <body cz-shortcut-listen="true">
-
-
-
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-
         <div class="navbar-header">
             <div class="container">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-
                     <span class="sr-only">Toggle navigation</span>
-
                     <span class="icon-bar"></span>
-
                     <span class="icon-bar"></span>
-
                     <span class="icon-bar"></span>
-
                 </button>
                 <a class="navbar-brand" href="/" style="margin-top:-23px"><img src="/Content/DiPSLogo.png" style="border:none;" /></a>
                 <div class="collapse navbar-collapse">
@@ -62,69 +50,46 @@
                         <li><a href="/Course/index.html">Courses</a></li>
                         <!--toplinks-->
                     </ul>
-
                 </div>
-
                 <!--/.nav-collapse -->
             </div>
         </div>
     </div>
-
     <div id="spinjs" class="spinjs"></div>
-
     <div class="container">
-
-
         <div id="instructor_template">
-            
-
             <input type="hidden" id="refresh" value="no">
-
             <h2>Instructor</h2>
             <div id="index_instructor">
                 <table class="table table-striped">
                     <thead>
                         <tr>
-
                             <th>
                                 LastName
                             </th>
                             <th>
                                 FirstName
                             </th>
-
                         </tr>
                     </thead>
                     <tbody data-bind="foreach: Instructors">
                         <tr>
-
                             <td>
                                 <label class='display-label' data-bind='text: LastName'></label>
                             </td>
                             <td>
                                 <label class='display-label' data-bind='text: FirstName'></label>
                             </td>
-
                             <td><a data-bind="attr: {href: '/instructor/Details.html?id=' + Id}">Details</a></td>
                             <td><a data-bind="attr: {href: '/instructor/Edit.html?id=' + Id}">Edit</a></td>
                             <td><a data-bind="click: $parent.remove" style="cursor:pointer;" title="Delete"><code><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></code></a></td>
                         </tr>
                     </tbody>
                 </table>
-
             </div>
             <a href="/Instructor/Create.html" class="btn btn-primary"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add</a>
-
-           
         </div>
-
-
-
-
     </div>
-
-
-
 </body>
 </html>
 

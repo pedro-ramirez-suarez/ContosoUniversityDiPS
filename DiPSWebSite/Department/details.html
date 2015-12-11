@@ -1,5 +1,4 @@
-﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -27,30 +26,20 @@
         diPSClient.Connect('ws://localhost:8888/dips');
     </script>
     <script>
-    require(["/Scripts/app/DepartmentDetails.js"], function () {
-        //do nothing
-    });
+        require(["/Scripts/app/DepartmentDetails.js"], function () {
+            //do nothing
+        });
     </script>
-
 </head>
 <body cz-shortcut-listen="true">
-
-
-
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-
         <div class="navbar-header">
             <div class="container">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-
                     <span class="sr-only">Toggle navigation</span>
-
                     <span class="icon-bar"></span>
-
                     <span class="icon-bar"></span>
-
                     <span class="icon-bar"></span>
-
                 </button>
                 <a class="navbar-brand" href="/" style="margin-top:-23px"><img src="/Content/DiPSLogo.png" style="border:none;" /></a>
                 <div class="collapse navbar-collapse">
@@ -61,23 +50,15 @@
                         <li><a href="/Course/index.html">Courses</a></li>
                         <!--toplinks-->
                     </ul>
-
                 </div>
-
                 <!--/.nav-collapse -->
             </div>
         </div>
     </div>
-
     <div id="spinjs" class="spinjs"></div>
-
     <div class="container">
-
-
         <div id="department_template">
-
             <input type="hidden" id="refresh" value="no">
-
             <h2>Details</h2>
             <div data-bind="foreach: Departments" id="details_department">
                 <table class="table table">
@@ -89,7 +70,6 @@
                         </tr>
                     </thead>
                     <tbody>
-
                         <tr>
                             <td>Name:</td>
                             <td>
@@ -114,25 +94,12 @@
                                 <label class='display-label' data-bind='text: InstructorIDName'></label>
                             </td>
                         </tr>
-
                     </tbody>
                 </table>
-
                 <a data-bind="attr: {href:'/Department/index.html'}" class="btn btn-primary">Back</a>
                 <a data-bind="attr: {href: '/Department/Edit.html?id=' + Department.Id }" class="btn btn-primary">Edit</a>
             </div>
-
-          
         </div>
-
-
-
-
     </div>
-
-
-
 </body>
 </html>
-
-

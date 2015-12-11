@@ -1,5 +1,4 @@
-﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -26,33 +25,21 @@
         //we initiate the connection as soon as we can
         diPSClient.Connect('ws://localhost:8888/dips');
     </script>
-
     <script>
-    require(["/Scripts/app/InstructorDetails.js"], function () {
-        //do nothing
-    });
+        require(["/Scripts/app/InstructorDetails.js"], function () {
+            //do nothing
+        });
     </script>
-
-
 </head>
 <body cz-shortcut-listen="true">
-
-
-
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-
         <div class="navbar-header">
             <div class="container">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-
                     <span class="sr-only">Toggle navigation</span>
-
                     <span class="icon-bar"></span>
-
                     <span class="icon-bar"></span>
-
                     <span class="icon-bar"></span>
-
                 </button>
                 <a class="navbar-brand" href="/" style="margin-top:-23px"><img src="/Content/DiPSLogo.png" style="border:none;" /></a>
                 <div class="collapse navbar-collapse">
@@ -63,22 +50,15 @@
                         <li><a href="/Course/index.html">Courses</a></li>
                         <!--toplinks-->
                     </ul>
-
                 </div>
-
                 <!--/.nav-collapse -->
             </div>
         </div>
     </div>
-
     <div id="spinjs" class="spinjs"></div>
-
     <div class="container">
-
         <div id="instructor_template">
-
             <input type="hidden" id="refresh" value="no">
-
             <h2>Details</h2>
             <div data-bind="foreach: Instructors" id="details_instructor">
                 <table class="table table">
@@ -90,7 +70,6 @@
                         </tr>
                     </thead>
                     <tbody>
-
                         <tr>
                             <td>LastName:</td>
                             <td>
@@ -109,15 +88,12 @@
                                 <label class='display-label' data-bind='text: Instructor.HireDate'></label>
                             </td>
                         </tr>
-                        
-
                         <tr>
                             <td>Course(s):</td>
                             <td>
                                 <table class="table table-striped">
                                     <thead>
                                         <tr>
-
                                             <th>
                                                 Title
                                             </th>
@@ -128,7 +104,6 @@
                                     </thead>
                                     <tbody data-bind="foreach: Courses">
                                         <tr>
-
                                             <td>
                                                 <label class='display-label' data-bind='text: Title'></label>
                                             </td>
@@ -142,23 +117,10 @@
                         </tr>
                     </tbody>
                 </table>
-
                 <a data-bind="attr: {href:'/Instructor/index.html'}" class="btn btn-primary">Back</a>
                 <a data-bind="attr: {href:'/instructor/edit.html?id=' + Instructor.Id}" class="btn btn-primary">Edit</a>
             </div>
-
-            
         </div>
-
-
-
-
-
     </div>
-
-
-
 </body>
 </html>
-
-
