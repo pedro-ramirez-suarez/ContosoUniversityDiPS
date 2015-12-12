@@ -1,64 +1,100 @@
+﻿
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>Contosouniversitydips by pedro-ramirez-suarez</title>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">Contosouniversitydips</h1>
-      <h2 class="project-tagline"></h2>
-      <a href="https://github.com/pedro-ramirez-suarez/ContosoUniversityDiPS" class="btn">View on GitHub</a>
-      <a href="https://github.com/pedro-ramirez-suarez/ContosoUniversityDiPS/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/pedro-ramirez-suarez/ContosoUniversityDiPS/tarball/master" class="btn">Download .tar.gz</a>
-    </section>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <title>Course | List</title>
+    <link href="/Content/bootstrap.css" rel="stylesheet">
+    <link href="/Content/bootstrapValidator.css" rel="stylesheet">
+    <link href="/Content/bootstrap-datetimepicker.css" rel="stylesheet">
+    <link href="/Content/jquery_ui/jquery-ui.min.css" rel="stylesheet">
+    <link href="/Content/bs_pagination/jquery.bs_pagination.min.css" rel="stylesheet">
+    <link href="/Content/jui_filter/jquery.jui_filter_rules.bs.min.css" rel="stylesheet">
+    <link href="/Content/bs_grid/jquery.bs_grid.min.css" rel="stylesheet">
+    <link href="/Content/Site.css" rel="stylesheet" />
+    <script src="/Scripts/DiPSClient.js"></script>
+    <script src="/Scripts/main.js"></script>
+    <script src="/Scripts/require.config.js"></script>
+    <script src="/Scripts/require.js"></script>
+    <script>
+        //we initiate the connection as soon as we can
+        diPSClient.Connect('ws://localhost:8888/dips');
+    </script>
 
-    <section class="main-content">
-      <h1>
-<a id="contoso-university-with-dips" class="anchor" href="#contoso-university-with-dips" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contoso University with DiPS</h1>
+</head>
+<body cz-shortcut-listen="true">
 
-<h2>
-<a id="a-web-application-with-a-c-backend-build-with-dips" class="anchor" href="#a-web-application-with-a-c-backend-build-with-dips" aria-hidden="true"><span class="octicon octicon-link"></span></a>A web application with a C# backend build with DiPS.</h2>
 
-<p><a href="http://pedro-ramirez-suarez.github.io/DiPS/" target="_blank">DiPS</a> is a Distributed Publish Subscribe service, built with C# and clients for C#, Ruby and Javascript.</p>
 
-<p>The application is a demonstration of how to build a web application that has a console application as backend and communicates with it through DiPS, the web appliction is built only with html, css and javascript.</p>
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
 
-<h2>
-<a id="running-the-application" class="anchor" href="#running-the-application" aria-hidden="true"><span class="octicon octicon-link"></span></a>Running the application.</h2>
+        <div class="navbar-header">
+            <div class="container">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
 
-<p>The first time you run the application the database structure will be created, you need to create the database and modify the console application  app.config file accordingly.</p>
+                    <span class="sr-only">Toggle navigation</span>
 
-<p>Run the website without debugging(ctrl+F5).</p>
+                    <span class="icon-bar"></span>
 
-<h2>
-<a id="points-of-interest" class="anchor" href="#points-of-interest" aria-hidden="true"><span class="octicon octicon-link"></span></a>Points of interest</h2>
+                    <span class="icon-bar"></span>
 
-<p>The backend uses the <a href="http://www.nuget.org/packages/DiPSBackEndApplication/" target="_blank">DiPSBackEndApplication</a> nuget package, this package contains functionality that facilitates the creation of the service that acts as the backend, like registration of the controllers and it's methods, it also uses the <a href="http://www.nuget.org/packages/Needletail.DataAccess/" target="_blank">Needletail</a> micro orm and the  <a href="http://www.nuget.org/packages/Needletail.DataAccess.Migrations/" target="_blank">Needletail Migrations</a> packages for the data base access and initialization.</p>
+                    <span class="icon-bar"></span>
 
-<h2>
-<a id="original-idea" class="anchor" href="#original-idea" aria-hidden="true"><span class="octicon octicon-link"></span></a>Original idea.</h2>
+                </button>
+                <a class="navbar-brand" href="/" style="margin-top:-23px"><img src="/Content/dipslogo.png" style="border:none;" /></a>
+                
 
-<p>The original contoso university application is a sample app and tutorial from Microsoft, the tutorial is located <a href="https://www.asp.net/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application" target="_blank">here</a></p>
+                <!--/.nav-collapse -->
+            </div>
+        </div>
+    </div>
 
-<h2>
-<a id="things-to-improve" class="anchor" href="#things-to-improve" aria-hidden="true"><span class="octicon octicon-link"></span></a>Things to improve</h2>
+    <div id="spinjs" class="spinjs"></div>
 
-<p>The application needs some improvement handling a high number of  concurrent users, it handles the load pretty well, but some times some browsers may react to events that are intended to be for other user, this is not hard to fix, but right now I am not sure about the best way to handle some scenarios.</p>
+    <div class="container">
 
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/pedro-ramirez-suarez/ContosoUniversityDiPS">Contosouniversitydips</a> is maintained by <a href="https://github.com/pedro-ramirez-suarez">pedro-ramirez-suarez</a>.</span>
 
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
+        <div class="jumbotron">
+            <h1>Contoso University</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Welcome to DiPS backend for Contoso University</h2>
+                <p>
+                    Contoso University is a sample application that
+                    demonstrates how to use DiPS to build a back end for a web application.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h2>Contoso University</h2>
+                <p>The original Contoso University application is a sample application from Microsoft that was created as a tutorial for Asp.Net MVC 5 and Entity Framework Code First</p>
+                <p>You can see the tutorial <a target="_blank" class="btn btn-info btn-sm" href="http://www.asp.net/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application" > here</a>.</p>
+                <p>You can download the original sample code <a  target="_blank" class="btn btn-info btn-sm" href="https://code.msdn.microsoft.com/ASPNET-MVC-Application-b01a9fe8">here</a></p>
+            </div>
+            <div class="col-md-4">
+                <h2>DiPS</h2>
+                <p>DiPS is a <b>Di</b>stributed <b>P</b>ublish <b>S</b>ubscribe service</p>
+                <p>You can download the DiPS service <a class="btn btn-info btn-sm" href="https://github.com/pedro-ramirez-suarez/DiPS/raw/master/binaries/DipsServiceBinaries.zip">here</a></p>
+                <p>Download the zip, and uncompress the file to <code>c:\dips</code></p>
+                <i>You can uncompress the file into another folder, but you may need to change the app.config of the ContosoBackend project to point it into the right folder.</i>
+            </div>
+            
+        </div>
 
-    </section>
 
-  
-  </body>
+
+
+    </div>
+
+
+
+</body>
 </html>
+
+
