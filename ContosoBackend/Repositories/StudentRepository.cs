@@ -77,6 +77,11 @@ namespace ConUniv.Repositories
             return this.dataSource.GetAll();
         }
 
+        public async Task<IEnumerable<Student>> GetAllAsync()
+        {
+            return await this.dataSource.GetAllAsync();
+        }
+
         public IEnumerable<Student> GetAll(object orderBy)
         {
             return this.dataSource.GetAll(orderBy: orderBy);
