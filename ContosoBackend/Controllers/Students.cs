@@ -71,6 +71,20 @@ namespace ContosoBackend.Controllers
             DiPSClient.Publish("StudentsUpdated", new { Students = sRepo.GetAll(), Errors = Errors });
             Errors.Clear();
         }
+
+        //public async Task GetStudents(dynamic id)
+        //{
+        //    await UpdateStudents();
+        //}
+
+        //private async Task UpdateStudents()
+        //{
+        //    //return the list of Students
+        //    StudentRepository repo = new StudentRepository ();
+        //    var students = await repo.GetAllAsync();
+        //    DiPSClient.PublishAsync("StudentsUpdated", new { Students = students, Errors = Errors });
+        //    Errors.Clear();
+        //}
         
 
         public void AddCourse(dynamic course)
